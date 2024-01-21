@@ -1,0 +1,9 @@
+public class Persona {
+
+    public static void main(String[] args) {
+        String nombre = "Diego Fonseca";
+        int edad = 39;
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Edad: " + edad);
+    }
+}

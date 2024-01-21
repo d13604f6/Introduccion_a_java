@@ -1,0 +1,46 @@
+Para este ejercicio, primero definiremos una clase Operadores que contendrá las variables donde almacenaremos los resultados y los métodos que realizarán las operaciones. Luego, en la clase Main, crearemos una instancia de la clase Operadores y llamaremos a los métodos que realizan las operaciones.
+
+
+public class Operadores {
+
+    // variables donde almacenaremos los resultados
+    int sumaEnteros;
+    int restaEnteros;
+    int multiplicacionEnteros;
+    int divisionEnteros;
+
+    public void suma(int a, int b) {
+        sumaEnteros = a + b;
+    }
+
+    public void resta(int a, int b) {
+        restaEnteros = a - b;
+    }
+
+    public void multiplicacion(int a, int b) {
+        multiplicacionEnteros = a * b;
+    }
+
+    public void division(int a, int b) {
+        divisionEnteros = a / b;
+    }
+
+    public void mostrarResultados() {
+        System.out.println("Suma: " + sumaEnteros);
+        System.out.println("Resta: " + restaEnteros);
+        System.out.println("Multiplicación: " + multiplicacionEnteros);
+        System.out.println("División: " + divisionEnteros);
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        Operadores obj = new Operadores(); // crear una instancia de la clase
+        obj.suma(10, 5); // realizar la suma
+        obj.resta(10, 5); // realizar la resta
+        obj.multiplicacion(10, 5); // realizar la multiplicación
+        obj.division(10, 5); // realizar la división
+        obj.mostrarResultados(); // mostrar los resultados
+    }
+}
